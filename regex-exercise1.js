@@ -15,7 +15,6 @@ function validation(){
     let userInput = document.getElementById("validasiHuruf").value;
     let showResult = document.querySelector("#result");
     
-    //buat validasi regex
     let karakterRegex = /^[A-Z]/;
     
     if (karakterRegex.test(userInput)) {
