@@ -14,12 +14,10 @@
 function validation(){
     let userInput = document.getElementById("validasiHuruf").value;
     let showResult = document.querySelector("#result");
-    
     let karakterRegex = /^[A-Z]/;
     
     if (karakterRegex.test(userInput)) {
       showResult.innerHTML = `Huruf pertama adalah huruf <b>besar</b>`;
-      
     } else {
       showResult.innerHTML = `Huruf pertama adalah huruf <b>kecil</b>`;
     }
